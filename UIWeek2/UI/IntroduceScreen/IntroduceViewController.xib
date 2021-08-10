@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Signika-Regular.ttf">
+            <string>Signika-Regular</string>
+        </array>
+        <array key="Signika-SemiBold.ttf">
+            <string>Signika-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="IntroduceViewController" customModule="UIWeek2" customModuleProvider="target">
+            <connections>
+                <outlet property="getStartedButton" destination="Qpe-21-877" id="V6k-0u-27C"/>
+                <outlet property="goToLoginButton" destination="rij-6v-02x" id="Zt0-Rz-9vS"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img_logo_colored" translatesAutoresizingMaskIntoConstraints="NO" id="dOu-4K-aIm">
+                    <rect key="frame" x="178" y="76" width="58" height="24"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="58" id="QSj-he-fRQ"/>
+                        <constraint firstAttribute="height" constant="24" id="iU0-qx-Z08"/>
+                    </constraints>
+                </imageView>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img_introduce_1" translatesAutoresizingMaskIntoConstraints="NO" id="YMV-9E-OGz">
+                    <rect key="frame" x="66" y="164" width="282" height="282"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="282" id="Tfp-XR-a1t"/>
+                        <constraint firstAttribute="width" constant="282" id="xUp-7j-Ti3"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Eat Healthy" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BaX-Qh-83I">
+                    <rect key="frame" x="143" y="462" width="128.5" height="29.5"/>
+                    <fontDescription key="fontDescription" name="Signika-SemiBold" family="Signika" pointSize="25"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Maintaining good health should be the primary focus of everyone." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A0S-gM-9Xm">
+                    <rect key="frame" x="71" y="507.5" width="272" height="48"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="48" id="BjH-1K-eEU"/>
+                        <constraint firstAttribute="width" constant="272" id="ePY-yt-LA1"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Signika-Regular" family="Signika" pointSize="17"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.44804152397260272" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rij-6v-02x">
+                    <rect key="frame" x="83.5" y="766" width="247" height="32"/>
+                    <fontDescription key="fontDescription" name="Signika-Regular" family="Signika" pointSize="17"/>
+                    <state key="normal" title="Already Have An Acount? Log In">
+                        <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="0.44804152397260272" colorSpace="calibratedRGB"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qpe-21-877" customClass="AnimateButton" customModule="UIWeek2" customModuleProvider="target">
+                    <rect key="frame" x="62" y="652" width="290" height="72"/>
+                    <color key="backgroundColor" name="color_primary"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="290" id="YeG-xe-drm"/>
+                        <constraint firstAttribute="height" constant="72" id="zFk-he-kea"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Signika-Regular" family="Signika" pointSize="25"/>
+                    <state key="normal" title="Get Started">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="YMV-9E-OGz" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="0Kx-f2-S9i"/>
+                <constraint firstItem="Qpe-21-877" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="0kj-Ra-R39"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="rij-6v-02x" secondAttribute="bottom" constant="64" id="3pw-yJ-8H5"/>
+                <constraint firstItem="A0S-gM-9Xm" firstAttribute="top" secondItem="BaX-Qh-83I" secondAttribute="bottom" constant="16" id="4A4-Qf-TYH"/>
+                <constraint firstItem="BaX-Qh-83I" firstAttribute="top" secondItem="YMV-9E-OGz" secondAttribute="bottom" constant="16" id="Ord-DD-nWB"/>
+                <constraint firstItem="A0S-gM-9Xm" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="T1u-OJ-oVn"/>
+                <constraint firstItem="dOu-4K-aIm" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="dlc-HD-lfA"/>
+                <constraint firstItem="dOu-4K-aIm" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="32" id="gaQ-PY-173"/>
+                <constraint firstItem="rij-6v-02x" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="qbq-Xd-3Hw"/>
+                <constraint firstItem="rij-6v-02x" firstAttribute="top" secondItem="Qpe-21-877" secondAttribute="bottom" constant="42" id="rqT-Cv-Pif"/>
+                <constraint firstItem="BaX-Qh-83I" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="wdh-nH-fhp"/>
+                <constraint firstItem="YMV-9E-OGz" firstAttribute="top" secondItem="dOu-4K-aIm" secondAttribute="bottom" constant="64" id="wkE-j7-7Bz"/>
+            </constraints>
+            <point key="canvasLocation" x="140.57971014492756" y="118.52678571428571"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="img_introduce_1" width="281.5" height="282"/>
+        <image name="img_logo_colored" width="58.5" height="24"/>
+        <namedColor name="color_primary">
+            <color red="0.56862745098039214" green="0.7803921568627451" blue="0.53333333333333333" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
