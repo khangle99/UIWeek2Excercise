@@ -2,10 +2,13 @@ import Foundation
 import UIKit
 
 class AnimateButton: UIButton {
+    
     let scaleFactor: CGFloat = 0.9
     let animDuration = 0.1
+    
     required init?(coder: NSCoder) {
         super.init(coder: coder)
+        
         addTarget(self, action: #selector(animateButton(_:)), for: .touchUpInside)
     }
     
@@ -20,5 +23,7 @@ class AnimateButton: UIButton {
                 self.isUserInteractionEnabled = true
             }
         }
+        
     }
+    
 }

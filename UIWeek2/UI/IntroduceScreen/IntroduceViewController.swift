@@ -4,8 +4,10 @@ class IntroduceViewController: UIViewController {
 
     @IBOutlet weak var getStartedButton: UIButton!
     @IBOutlet weak var goToLoginButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         setupUI()
     }
     

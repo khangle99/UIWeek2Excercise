@@ -74,7 +74,7 @@
 			children = (
 				8ADBB9F326C2DC6000C2EFA2 /* Utils */,
 				8ADBB9EE26C2D84D00C2EFA2 /* Extension */,
-				8ADBB9CA26C2BF7600C2EFA2 /* font */,
+				8ADBB9CA26C2BF7600C2EFA2 /* CustomFonts */,
 				8ADBB9C126C2BB7600C2EFA2 /* UI */,
 				8A47222C26C2B8AF0025095C /* AppDelegate.swift */,
 				8A47222E26C2B8AF0025095C /* SceneDelegate.swift */,
@@ -104,14 +104,14 @@
 			path = LaunchScreen;
 			sourceTree = "<group>";
 		};
-		8ADBB9CA26C2BF7600C2EFA2 /* font */ = {
+		8ADBB9CA26C2BF7600C2EFA2 /* CustomFonts */ = {
 			isa = PBXGroup;
 			children = (
 				8ADBB9E926C2D7AB00C2EFA2 /* Signika-Regular.ttf */,
 				8ADBB9EA26C2D7AB00C2EFA2 /* Signika-SemiBold.ttf */,
 				8ADBB9DB26C2D0A600C2EFA2 /* Nunito-ExtraBold.ttf */,
 			);
-			path = font;
+			path = CustomFonts;
 			sourceTree = "<group>";
 		};
 		8ADBB9D126C2C3E700C2EFA2 /* IntroduceScreen */ = {
