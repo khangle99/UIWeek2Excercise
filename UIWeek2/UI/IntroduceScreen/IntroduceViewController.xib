@@ -102,7 +102,7 @@
         <image name="img_introduce_1" width="281.5" height="282"/>
         <image name="img_logo_colored" width="58.5" height="24"/>
         <namedColor name="color_primary">
-            <color red="0.56862745098039214" green="0.7803921568627451" blue="0.53333333333333333" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.5690000057220459" green="0.77999997138977051" blue="0.53299999237060547" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
