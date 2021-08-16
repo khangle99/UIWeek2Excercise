@@ -10,7 +10,6 @@ class LaunchScreenViewController: UIViewController {
             let introduceVC = IntroduceViewController(nibName: "IntroduceViewController", bundle: nil)
             self.navigationController?.pushViewController(introduceVC, animated: true)
         }
-        
     }
     
 }

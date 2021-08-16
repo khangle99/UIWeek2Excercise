@@ -11,13 +11,17 @@
 		8A47222F26C2B8AF0025095C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A47222E26C2B8AF0025095C /* SceneDelegate.swift */; };
 		8A47223626C2B8B00025095C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8A47223526C2B8B00025095C /* Assets.xcassets */; };
 		8A47223926C2B8B00025095C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A47223726C2B8B00025095C /* LaunchScreen.storyboard */; };
+		8A76E5B926C3BE8E00E1DB46 /* Signika-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8A76E5B626C3BE8E00E1DB46 /* Signika-Regular.ttf */; };
+		8A76E5BA26C3BE8E00E1DB46 /* Signika-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8A76E5B726C3BE8E00E1DB46 /* Signika-SemiBold.ttf */; };
+		8A76E5BB26C3BE8E00E1DB46 /* Nunito-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8A76E5B826C3BE8E00E1DB46 /* Nunito-ExtraBold.ttf */; };
+		8ADB69E626C8AC990008A18E /* TutorialCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ADB69E426C8AC990008A18E /* TutorialCollectionViewCell.swift */; };
+		8ADB69E726C8AC990008A18E /* TutorialCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8ADB69E526C8AC990008A18E /* TutorialCollectionViewCell.xib */; };
+		8ADB69EB26C8ACF90008A18E /* TutorialInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ADB69EA26C8ACF90008A18E /* TutorialInfo.swift */; };
+		8ADB69EE26C9080B0008A18E /* AdaptPageControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ADB69ED26C9080B0008A18E /* AdaptPageControl.swift */; };
 		8ADBB9C726C2BBB400C2EFA2 /* LaunchScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ADBB9C526C2BBB400C2EFA2 /* LaunchScreenViewController.swift */; };
 		8ADBB9C826C2BBB400C2EFA2 /* LaunchScreenViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8ADBB9C626C2BBB400C2EFA2 /* LaunchScreenViewController.xib */; };
 		8ADBB9D426C2C42200C2EFA2 /* IntroduceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ADBB9D226C2C42200C2EFA2 /* IntroduceViewController.swift */; };
 		8ADBB9D526C2C42200C2EFA2 /* IntroduceViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8ADBB9D326C2C42200C2EFA2 /* IntroduceViewController.xib */; };
-		8ADBB9DC26C2D0A600C2EFA2 /* Nunito-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8ADBB9DB26C2D0A600C2EFA2 /* Nunito-ExtraBold.ttf */; };
-		8ADBB9EB26C2D7AB00C2EFA2 /* Signika-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8ADBB9E926C2D7AB00C2EFA2 /* Signika-Regular.ttf */; };
-		8ADBB9EC26C2D7AB00C2EFA2 /* Signika-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8ADBB9EA26C2D7AB00C2EFA2 /* Signika-SemiBold.ttf */; };
 		8ADBB9F026C2D85E00C2EFA2 /* UILabelExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ADBB9EF26C2D85E00C2EFA2 /* UILabelExtension.swift */; };
 		8ADBB9F526C2DC7100C2EFA2 /* ColorName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ADBB9F426C2DC7100C2EFA2 /* ColorName.swift */; };
 		8ADBB9FA26C2E99D00C2EFA2 /* AnimateButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ADBB9F926C2E99D00C2EFA2 /* AnimateButton.swift */; };
@@ -30,13 +34,17 @@
 		8A47223526C2B8B00025095C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8A47223826C2B8B00025095C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8A47223A26C2B8B00025095C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8A76E5B626C3BE8E00E1DB46 /* Signika-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Signika-Regular.ttf"; sourceTree = "<group>"; };
+		8A76E5B726C3BE8E00E1DB46 /* Signika-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Signika-SemiBold.ttf"; sourceTree = "<group>"; };
+		8A76E5B826C3BE8E00E1DB46 /* Nunito-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-ExtraBold.ttf"; sourceTree = "<group>"; };
+		8ADB69E426C8AC990008A18E /* TutorialCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialCollectionViewCell.swift; sourceTree = "<group>"; };
+		8ADB69E526C8AC990008A18E /* TutorialCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TutorialCollectionViewCell.xib; sourceTree = "<group>"; };
+		8ADB69EA26C8ACF90008A18E /* TutorialInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialInfo.swift; sourceTree = "<group>"; };
+		8ADB69ED26C9080B0008A18E /* AdaptPageControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdaptPageControl.swift; sourceTree = "<group>"; };
 		8ADBB9C526C2BBB400C2EFA2 /* LaunchScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreenViewController.swift; sourceTree = "<group>"; };
 		8ADBB9C626C2BBB400C2EFA2 /* LaunchScreenViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LaunchScreenViewController.xib; sourceTree = "<group>"; };
 		8ADBB9D226C2C42200C2EFA2 /* IntroduceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroduceViewController.swift; sourceTree = "<group>"; };
 		8ADBB9D326C2C42200C2EFA2 /* IntroduceViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = IntroduceViewController.xib; sourceTree = "<group>"; };
-		8ADBB9DB26C2D0A600C2EFA2 /* Nunito-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Nunito-ExtraBold.ttf"; path = "../../../../Downloads/Nunito/Nunito-ExtraBold.ttf"; sourceTree = "<group>"; };
-		8ADBB9E926C2D7AB00C2EFA2 /* Signika-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Signika-Regular.ttf"; path = "../../../../Downloads/Signika/static/Signika-Regular.ttf"; sourceTree = "<group>"; };
-		8ADBB9EA26C2D7AB00C2EFA2 /* Signika-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Signika-SemiBold.ttf"; path = "../../../../Downloads/Signika/static/Signika-SemiBold.ttf"; sourceTree = "<group>"; };
 		8ADBB9EF26C2D85E00C2EFA2 /* UILabelExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UILabelExtension.swift; sourceTree = "<group>"; };
 		8ADBB9F426C2DC7100C2EFA2 /* ColorName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorName.swift; sourceTree = "<group>"; };
 		8ADBB9F926C2E99D00C2EFA2 /* AnimateButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimateButton.swift; sourceTree = "<group>"; };
@@ -72,9 +80,10 @@
 		8A47222B26C2B8AF0025095C /* UIWeek2 */ = {
 			isa = PBXGroup;
 			children = (
+				8ADB69E926C8ACE00008A18E /* Model */,
+				8A76E5B526C3BE5B00E1DB46 /* CustomFonts */,
 				8ADBB9F326C2DC6000C2EFA2 /* Utils */,
 				8ADBB9EE26C2D84D00C2EFA2 /* Extension */,
-				8ADBB9CA26C2BF7600C2EFA2 /* CustomFonts */,
 				8ADBB9C126C2BB7600C2EFA2 /* UI */,
 				8A47222C26C2B8AF0025095C /* AppDelegate.swift */,
 				8A47222E26C2B8AF0025095C /* SceneDelegate.swift */,
@@ -83,6 +92,33 @@
 				8A47223A26C2B8B00025095C /* Info.plist */,
 			);
 			path = UIWeek2;
+			sourceTree = "<group>";
+		};
+		8A76E5B526C3BE5B00E1DB46 /* CustomFonts */ = {
+			isa = PBXGroup;
+			children = (
+				8A76E5B826C3BE8E00E1DB46 /* Nunito-ExtraBold.ttf */,
+				8A76E5B626C3BE8E00E1DB46 /* Signika-Regular.ttf */,
+				8A76E5B726C3BE8E00E1DB46 /* Signika-SemiBold.ttf */,
+			);
+			path = CustomFonts;
+			sourceTree = "<group>";
+		};
+		8ADB69E326C8AC6F0008A18E /* TutorialCollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				8ADB69E426C8AC990008A18E /* TutorialCollectionViewCell.swift */,
+				8ADB69E526C8AC990008A18E /* TutorialCollectionViewCell.xib */,
+			);
+			path = TutorialCollectionView;
+			sourceTree = "<group>";
+		};
+		8ADB69E926C8ACE00008A18E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8ADB69EA26C8ACF90008A18E /* TutorialInfo.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		8ADBB9C126C2BB7600C2EFA2 /* UI */ = {
@@ -104,19 +140,10 @@
 			path = LaunchScreen;
 			sourceTree = "<group>";
 		};
-		8ADBB9CA26C2BF7600C2EFA2 /* CustomFonts */ = {
-			isa = PBXGroup;
-			children = (
-				8ADBB9E926C2D7AB00C2EFA2 /* Signika-Regular.ttf */,
-				8ADBB9EA26C2D7AB00C2EFA2 /* Signika-SemiBold.ttf */,
-				8ADBB9DB26C2D0A600C2EFA2 /* Nunito-ExtraBold.ttf */,
-			);
-			path = CustomFonts;
-			sourceTree = "<group>";
-		};
 		8ADBB9D126C2C3E700C2EFA2 /* IntroduceScreen */ = {
 			isa = PBXGroup;
 			children = (
+				8ADB69E326C8AC6F0008A18E /* TutorialCollectionView */,
 				8ADBB9D226C2C42200C2EFA2 /* IntroduceViewController.swift */,
 				8ADBB9D326C2C42200C2EFA2 /* IntroduceViewController.xib */,
 			);
@@ -143,6 +170,7 @@
 			isa = PBXGroup;
 			children = (
 				8ADBB9F926C2E99D00C2EFA2 /* AnimateButton.swift */,
+				8ADB69ED26C9080B0008A18E /* AdaptPageControl.swift */,
 			);
 			path = CustomView;
 			sourceTree = "<group>";
@@ -206,11 +234,12 @@
 			files = (
 				8A47223926C2B8B00025095C /* LaunchScreen.storyboard in Resources */,
 				8ADBB9C826C2BBB400C2EFA2 /* LaunchScreenViewController.xib in Resources */,
+				8ADB69E726C8AC990008A18E /* TutorialCollectionViewCell.xib in Resources */,
+				8A76E5BA26C3BE8E00E1DB46 /* Signika-SemiBold.ttf in Resources */,
 				8A47223626C2B8B00025095C /* Assets.xcassets in Resources */,
-				8ADBB9DC26C2D0A600C2EFA2 /* Nunito-ExtraBold.ttf in Resources */,
-				8ADBB9EC26C2D7AB00C2EFA2 /* Signika-SemiBold.ttf in Resources */,
-				8ADBB9EB26C2D7AB00C2EFA2 /* Signika-Regular.ttf in Resources */,
+				8A76E5B926C3BE8E00E1DB46 /* Signika-Regular.ttf in Resources */,
 				8ADBB9D526C2C42200C2EFA2 /* IntroduceViewController.xib in Resources */,
+				8A76E5BB26C3BE8E00E1DB46 /* Nunito-ExtraBold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -222,11 +251,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				8ADBB9D426C2C42200C2EFA2 /* IntroduceViewController.swift in Sources */,
+				8ADB69EE26C9080B0008A18E /* AdaptPageControl.swift in Sources */,
 				8ADBB9FA26C2E99D00C2EFA2 /* AnimateButton.swift in Sources */,
 				8A47222D26C2B8AF0025095C /* AppDelegate.swift in Sources */,
 				8ADBB9C726C2BBB400C2EFA2 /* LaunchScreenViewController.swift in Sources */,
+				8ADB69E626C8AC990008A18E /* TutorialCollectionViewCell.swift in Sources */,
 				8ADBB9F026C2D85E00C2EFA2 /* UILabelExtension.swift in Sources */,
 				8A47222F26C2B8AF0025095C /* SceneDelegate.swift in Sources */,
+				8ADB69EB26C8ACF90008A18E /* TutorialInfo.swift in Sources */,
 				8ADBB9F526C2DC7100C2EFA2 /* ColorName.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -368,6 +400,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = UIWeek2/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -386,6 +419,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = UIWeek2/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

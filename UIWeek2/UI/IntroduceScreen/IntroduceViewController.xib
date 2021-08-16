@@ -2,17 +2,29 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Signika-Regular.ttf">
+            <string>Signika-Regular</string>
+        </array>
+        <array key="Signika-SemiBold.ttf">
+            <string>Signika-SemiBold</string>
+        </array>
+    </customFonts>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="IntroduceViewController" customModule="UIWeek2" customModuleProvider="target">
             <connections>
                 <outlet property="getStartedButton" destination="Qpe-21-877" id="V6k-0u-27C"/>
                 <outlet property="goToLoginButton" destination="rij-6v-02x" id="Zt0-Rz-9vS"/>
+                <outlet property="tutorialCollectionView" destination="i0W-av-lV6" id="3lJ-zJ-W25"/>
+                <outlet property="tutorialPageControl" destination="GqE-3w-w50" id="boW-Dn-aFY"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -28,70 +40,77 @@
                         <constraint firstAttribute="height" constant="24" id="iU0-qx-Z08"/>
                     </constraints>
                 </imageView>
-                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img_introduce_1" translatesAutoresizingMaskIntoConstraints="NO" id="YMV-9E-OGz">
-                    <rect key="frame" x="66" y="164" width="282" height="282"/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="282" id="Tfp-XR-a1t"/>
-                        <constraint firstAttribute="width" constant="282" id="xUp-7j-Ti3"/>
-                    </constraints>
-                </imageView>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Eat Healthy" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BaX-Qh-83I">
-                    <rect key="frame" x="140" y="462" width="134" height="30"/>
-                    <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
-                    <nil key="textColor"/>
-                    <nil key="highlightedColor"/>
-                </label>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Maintaining good health should be the primary focus of everyone." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A0S-gM-9Xm">
-                    <rect key="frame" x="71" y="508" width="272" height="48"/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="48" id="BjH-1K-eEU"/>
-                        <constraint firstAttribute="width" constant="272" id="ePY-yt-LA1"/>
-                    </constraints>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.44804152397260272" colorSpace="calibratedRGB"/>
-                    <nil key="highlightedColor"/>
-                </label>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rij-6v-02x">
-                    <rect key="frame" x="85.5" y="765" width="243" height="33"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <rect key="frame" x="83.5" y="814" width="247" height="32"/>
+                    <fontDescription key="fontDescription" name="Signika-Regular" family="Signika" pointSize="17"/>
                     <state key="normal" title="Already Have An Acount? Log In">
                         <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="0.44804152397260272" colorSpace="calibratedRGB"/>
                     </state>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qpe-21-877" customClass="AnimateButton" customModule="UIWeek2" customModuleProvider="target">
-                    <rect key="frame" x="62" y="651" width="290" height="72"/>
+                    <rect key="frame" x="62" y="726" width="290" height="72"/>
                     <color key="backgroundColor" name="color_primary"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="290" id="YeG-xe-drm"/>
                         <constraint firstAttribute="height" constant="72" id="zFk-he-kea"/>
                     </constraints>
-                    <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                    <fontDescription key="fontDescription" name="Signika-SemiBold" family="Signika" pointSize="25"/>
                     <state key="normal" title="Get Started">
                         <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </state>
                 </button>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="i0W-av-lV6">
+                    <rect key="frame" x="0.0" y="116" width="414" height="441.5"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="i0W-av-lV6" secondAttribute="height" multiplier="15:16" id="85l-Tk-wBI"/>
+                    </constraints>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Fia-Yc-zdi">
+                        <size key="itemSize" width="128" height="128"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                </collectionView>
+                <pageControl opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="GqE-3w-w50" customClass="AdaptPageControl" customModule="UIWeek2" customModuleProvider="target">
+                    <rect key="frame" x="135" y="573.5" width="144.5" height="28"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="144.5" id="qbw-Jm-nDY"/>
+                    </constraints>
+                    <color key="pageIndicatorTintColor" red="1" green="0.75294117650000003" blue="0.72156862749999995" alpha="1" colorSpace="calibratedRGB"/>
+                    <color key="currentPageIndicatorTintColor" red="1" green="0.51764705879999995" blue="0.45098039220000002" alpha="1" colorSpace="calibratedRGB"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="image" keyPath="selectedPageImage">
+                            <imageReference key="value" image="img_dot_active" symbolScale="small" renderingMode="original"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="image" keyPath="otherPagesImage" value="img_dot_inactive"/>
+                    </userDefinedRuntimeAttributes>
+                </pageControl>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
-                <constraint firstItem="YMV-9E-OGz" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="0Kx-f2-S9i"/>
                 <constraint firstItem="Qpe-21-877" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="0kj-Ra-R39"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="rij-6v-02x" secondAttribute="bottom" constant="64" id="3pw-yJ-8H5"/>
-                <constraint firstItem="A0S-gM-9Xm" firstAttribute="top" secondItem="BaX-Qh-83I" secondAttribute="bottom" constant="16" id="4A4-Qf-TYH"/>
-                <constraint firstItem="BaX-Qh-83I" firstAttribute="top" secondItem="YMV-9E-OGz" secondAttribute="bottom" constant="16" id="Ord-DD-nWB"/>
-                <constraint firstItem="A0S-gM-9Xm" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="T1u-OJ-oVn"/>
+                <constraint firstItem="i0W-av-lV6" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="2l7-rE-9d3"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="rij-6v-02x" secondAttribute="bottom" constant="16" id="3pw-yJ-8H5"/>
+                <constraint firstItem="GqE-3w-w50" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="AAX-QG-usU"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="i0W-av-lV6" secondAttribute="trailing" id="HEh-n4-yXU"/>
+                <constraint firstItem="i0W-av-lV6" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="OJc-3U-Pse"/>
+                <constraint firstItem="i0W-av-lV6" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="Szy-WI-ajZ"/>
                 <constraint firstItem="dOu-4K-aIm" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="dlc-HD-lfA"/>
+                <constraint firstItem="GqE-3w-w50" firstAttribute="top" secondItem="i0W-av-lV6" secondAttribute="bottom" constant="16" id="eer-he-iZy"/>
                 <constraint firstItem="dOu-4K-aIm" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="32" id="gaQ-PY-173"/>
+                <constraint firstItem="i0W-av-lV6" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="m7X-mg-vaY"/>
                 <constraint firstItem="rij-6v-02x" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="qbq-Xd-3Hw"/>
-                <constraint firstItem="rij-6v-02x" firstAttribute="top" secondItem="Qpe-21-877" secondAttribute="bottom" constant="42" id="rqT-Cv-Pif"/>
-                <constraint firstItem="BaX-Qh-83I" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="wdh-nH-fhp"/>
-                <constraint firstItem="YMV-9E-OGz" firstAttribute="top" secondItem="dOu-4K-aIm" secondAttribute="bottom" constant="64" id="wkE-j7-7Bz"/>
+                <constraint firstItem="i0W-av-lV6" firstAttribute="top" secondItem="dOu-4K-aIm" secondAttribute="bottom" constant="16" id="r1t-7R-sbJ"/>
+                <constraint firstItem="rij-6v-02x" firstAttribute="top" secondItem="Qpe-21-877" secondAttribute="bottom" constant="16" id="rqT-Cv-Pif"/>
             </constraints>
             <point key="canvasLocation" x="140.57971014492756" y="118.52678571428571"/>
         </view>
     </objects>
     <resources>
-        <image name="img_introduce_1" width="281.5" height="282"/>
+        <image name="img_dot_active" width="20" height="10"/>
+        <image name="img_dot_inactive" width="12" height="8"/>
         <image name="img_logo_colored" width="58.5" height="24"/>
         <namedColor name="color_primary">
             <color red="0.5690000057220459" green="0.77999997138977051" blue="0.53299999237060547" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
